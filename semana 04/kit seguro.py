@@ -14,9 +14,14 @@ except ValueError:
     print ("Canntidad de dias invalidos,ingrese los dias del 0 al 100")
     dias = -1
     
-if not nombre:
+if not nombre or not kit or cantidad < 1 or dias < 1:
     resultado = 'Registro rechazado: revise los datos!'
+elif autorizacion and cantida <= 3 and not dias > 7:
+    resultado = f"Solicitud aprobada para {nombre}: {cantidad} kits de {kit}"
+else:
+    resultado = "Solicitud enviada a revision"
+    
 
-print("-" * 47)
+print("-" * 47"\n")
 print(resultado)
-print("-" * 47)
+print("-" * 47"\n")
