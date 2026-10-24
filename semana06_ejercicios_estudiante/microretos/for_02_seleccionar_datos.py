@@ -12,6 +12,7 @@ horas_meta = []
 for horas in horas_reportadas:
     if horas >= 3:
         # TODO: agregue a horas_meta el dato que cumple la condición.
+        horas_meta.append (horas)
         pass
 
 print("Registros que alcanzan la meta:", horas_meta)
