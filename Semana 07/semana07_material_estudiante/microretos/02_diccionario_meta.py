@@ -11,6 +11,8 @@ sede = {
     "ventas": [85000, 92000, 78000],
     "meta": 450000,
 }
+sede['meta'] = 470000
+
 print("Nombre:", sede["nombre"])
 print("Primera venta:", sede["ventas"][0])
 print("Meta inicial:", sede["meta"])
