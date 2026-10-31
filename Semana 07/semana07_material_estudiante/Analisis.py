@@ -1,9 +1,24 @@
 from sedes import sedes
 
-print ("Ventas de la primera sede:", sedes[0]["ventas"])
+print("Sedes registradas:", len(sedes))
+print("Primera sede:", sedes[0]['nombre'])
+print("Ventas de la primera sede:", sedes[0]["ventas"])
 
-
-print ("\nAnalisis semanal de emprendimienetos de Costa Rica")
+print("\nANÁLISIS SEMANAL DE EMPREDIMIENTOS")
 
 for sede in sedes:
-    print ("Emprendimiento:", sede["nombre"])
+    total = sum(sede["ventas"])
+    porcentaje = total / sede['meta'] * 100
+    
+    #Clasificación
+    if porcentaje >= 100:
+        estado = "Meta Alcanzada"
+    elif porcentaje >= 80:
+        estado = "Cerca de la meta"
+    else:
+        estado = "Requiere atención"
+    
+    print(
+        f"{sede['nombre']} | Total:₡{total:,.2f} | "
+        f"Cumpliento: {porcentaje:.2f}% | {estado}"
+    )
