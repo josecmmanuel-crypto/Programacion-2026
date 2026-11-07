@@ -26,7 +26,7 @@ else:
 # TODO: Muestre total, promedio, porcentaje, cantidad de bloques y estado.
 # Con los datos base: total 990, promedio 198, 66 %, 2 bloques, ocupación media.
 print("\nANALISIS DE ASISTENCIA POR BLOQUES ")
-print(f"El total de asistentes es: {total}")
+print(f"El total de asistencia es: {total}")
 print(f"El promedio de asistencia es: {promedio}")
 print(f"El porcentaje de ocupación es: {porcentaje_ocupacion:.2f} %")
 print(f"La cantidad de bloques que superan el 70 % es: {bloques_superan}")

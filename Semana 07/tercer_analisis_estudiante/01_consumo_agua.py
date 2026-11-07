@@ -1,6 +1,6 @@
 """Caso 1: cambio del consumo diario de agua. Complete el programa."""
 
-consumos_litros = [100, 100, 100, 100, 100]
+consumos_litros = [120, 115, 108, 102, 96]
 
 # TODO: Calcule el consumo total y el promedio diario.
 total_consumo = sum(consumos_litros)

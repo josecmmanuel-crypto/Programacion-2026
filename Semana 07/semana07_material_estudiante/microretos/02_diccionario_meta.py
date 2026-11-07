@@ -12,6 +12,7 @@ sede = {
     "meta": 450000,
 }
 sede['meta'] = 470000
+print("Total de ventas:", sum(sede["ventas"]))
 
 print("Nombre:", sede["nombre"])
 print("Primera venta:", sede["ventas"][0])
