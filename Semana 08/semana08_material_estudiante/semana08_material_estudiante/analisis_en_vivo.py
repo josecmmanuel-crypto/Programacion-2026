@@ -17,8 +17,24 @@ if len(registros) < 3:
 
 
 # FASE 1: MOSTRAR Y CONTAR LOS MEDICAMENTOS DE TRES ATENCIONES
+total_medicamento = 0
+conteo_medicamento = {}
+print ("Analisis Fase 1 Muestra #3")
+for indice in range(3):
+    registro = registros [indice] 
+print("\n Paciente : {registro[paciente_nombre]}")
+print("\n Cedula: {registro[paciente_cedula]}")
+print("\n Diagnostico: {registro[diagnostico]}")
+print("\n Medicamento: {registro[medicamentos]}")
 
+for medicamento in registro['medicamentos']:
+        print(medicamento)
+        total_medicamento += 1
+        
 # FASE 2: CONTAR LOS MEDICAMENTOS DE TODAS LAS ATENCIONES
+print("\nAnalisis Fase 2 Medicaciones y Atenciones")
+for registro in registros:
+    print(registro['paciente_nombre'])
 
 # FASE 3: CONTAR ATENCIONES POR HOSPITAL
 
